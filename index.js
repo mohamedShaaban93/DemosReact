@@ -1,11 +1,9 @@
 /**
  * @format
  */
-
+require('./src/Screens')
 import {Navigation} from 'react-native-navigation'
 import App from './App';
-
-Navigation.registerComponent('Food.App' , ()=> App)
 
 Navigation.events().registerAppLaunchedListener(()=>{
   Navigation.setRoot({
@@ -13,7 +11,7 @@ Navigation.events().registerAppLaunchedListener(()=>{
       stack:{
         children:[{
           component:{
-            name:'Food.App'
+            name:'Signin'
           }
         }]
       }
